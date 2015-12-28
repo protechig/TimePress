@@ -9,41 +9,41 @@
  * License: GPL2
  */
 
- if ( ! function_exists('trellopress') ) {
+ if ( ! function_exists('timepress') ) {
 
 // Register Custom Post Type
-function trellopress() {
+function timepress() {
 
 	$labels = array(
-		'name'                  => _x( 'Time Cards', 'Post Type General Name', 'trellopress' ),
-		'singular_name'         => _x( 'Time Card', 'Post Type Singular Name', 'trellopress' ),
-		'menu_name'             => __( 'TrelloPress', 'trellopress' ),
-		'name_admin_bar'        => __( 'TrelloPress', 'trellopress' ),
-		'archives'              => __( 'Time Card Archives', 'trellopress' ),
-		'parent_item_colon'     => __( 'Parent Item:', 'trellopress' ),
-		'all_items'             => __( 'All Time Cards', 'trellopress' ),
-		'add_new_item'          => __( 'Add New Time Card', 'trellopress' ),
-		'add_new'               => __( 'Add New', 'trellopress' ),
-		'new_item'              => __( 'New Time Card', 'trellopress' ),
-		'edit_item'             => __( 'Edit Time Card', 'trellopress' ),
-		'update_item'           => __( 'Update Time Card', 'trellopress' ),
-		'view_item'             => __( 'View Time Card', 'trellopress' ),
-		'search_items'          => __( 'Search Time Cards', 'trellopress' ),
-		'not_found'             => __( 'No Time Cards Found', 'trellopress' ),
-		'not_found_in_trash'    => __( 'No Time Cards Found in Trash', 'trellopress' ),
-		'featured_image'        => __( 'Featured Image', 'trellopress' ),
-		'set_featured_image'    => __( 'Set featured image', 'trellopress' ),
-		'remove_featured_image' => __( 'Remove featured image', 'trellopress' ),
-		'use_featured_image'    => __( 'Use as featured image', 'trellopress' ),
-		'insert_into_item'      => __( 'Insert into item', 'trellopress' ),
-		'uploaded_to_this_item' => __( 'Uploaded to this item', 'trellopress' ),
-		'items_list'            => __( 'Items list', 'trellopress' ),
-		'items_list_navigation' => __( 'Items list navigation', 'trellopress' ),
-		'filter_items_list'     => __( 'Filter items list', 'trellopress' ),
+		'name'                  => _x( 'Time Entries', 'Post Type General Name', 'timepress' ),
+		'singular_name'         => _x( 'Time Entry', 'Post Type Singular Name', 'timepress' ),
+		'menu_name'             => __( 'TimePress', 'timepress' ),
+		'name_admin_bar'        => __( 'TimePress', 'timepress' ),
+		'archives'              => __( 'Time Sheet', 'timepress' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'timepress' ),
+		'all_items'             => __( 'All Time Entries', 'timepress' ),
+		'add_new_item'          => __( 'Add New Time Entry', 'timepress' ),
+		'add_new'               => __( 'Add New', 'timepress' ),
+		'new_item'              => __( 'New Time entry', 'timepress' ),
+		'edit_item'             => __( 'Edit Time entry', 'timepress' ),
+		'update_item'           => __( 'Update Time entry', 'timepress' ),
+		'view_item'             => __( 'View Time entry', 'timepress' ),
+		'search_items'          => __( 'Search Time entries', 'timepress' ),
+		'not_found'             => __( 'No Time entries Found', 'timepress' ),
+		'not_found_in_trash'    => __( 'No Time entries Found in Trash', 'timepress' ),
+		'featured_image'        => __( 'Featured Image', 'timepress' ),
+		'set_featured_image'    => __( 'Set featured image', 'timepress' ),
+		'remove_featured_image' => __( 'Remove featured image', 'timepress' ),
+		'use_featured_image'    => __( 'Use as featured image', 'timepress' ),
+		'insert_into_item'      => __( 'Insert into item', 'timepress' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'timepress' ),
+		'items_list'            => __( 'Items list', 'timepress' ),
+		'items_list_navigation' => __( 'Items list navigation', 'timepress' ),
+		'filter_items_list'     => __( 'Filter items list', 'timepress' ),
 	);
 	$args = array(
-		'label'                 => __( 'Time Card', 'trellopress' ),
-		'description'           => __( 'Time Tracking for Trello', 'trellopress' ),
+		'label'                 => __( 'Time entry', 'timepress' ),
+		'description'           => __( 'Time Tracking for WordPress', 'timepress' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'excerpt', 'custom-fields', 'page-attributes', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
@@ -61,9 +61,9 @@ function trellopress() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'trellopress', $args );
+	register_post_type( 'timepress', $args );
 
 }
-add_action( 'init', 'trellopress', 0 );
+add_action( 'init', 'timepress', 0 );
 
 }
