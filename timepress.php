@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: TrelloPress
- * Plugin URI: https://protechig.com/trellopress
- * Description: Time Tracking in Trello
+ * Plugin Name: TimePress
+ * Plugin URI: https://protechig.com/timepress
+ * Description: Time Tracking in WordPress
  * Version: 0.1
  * Author: Zachary Russell
  * Author URI: http://zachrussell.net
